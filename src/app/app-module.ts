@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { CafeModule } from './cafe/cafe-module';
+
 
 @NgModule({
   declarations: [
@@ -10,8 +12,10 @@ import { App } from './app';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CafeModule
   ],
+
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideHttpClient(),
